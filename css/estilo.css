@@ -26,7 +26,7 @@
   display: flex;
   flex: 1;
   padding: 0;
-  margin: 0;
+  margin-right: 200px;
 }
 .grid-container .header .navbar ul li {
   margin: 0 15px;
@@ -48,10 +48,19 @@
   height: 6vh;
   background-color: #F7C4FF;
 }
+.grid-container .footer .footer-link {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  height: 100%;
+}
 .grid-container .main {
   grid-area: main;
   height: 84vh;
-  background-color: #FFC4D5;
+  background-color: #ffe4ff;
 }
 
 .container-main {
@@ -67,6 +76,7 @@
 .container-main .title {
   grid-area: title;
   height: 10vh;
+  margin-top: 20px;
 }
 .container-main .title h1 {
   font-size: 4em;
@@ -92,19 +102,17 @@
   text-align: center;
 }
 .container-card .container-card-1 {
-  grid-template-areas: container-card-1;
+  grid-area: container-card-1;
 }
-.container-card .container-card-1 a {
+.container-card .container-card-1 .articulos {
   color: #000000;
   text-decoration: none;
   padding: 15px 20px;
   list-style: none;
-}
-.container-card .container-card-1 .articulos {
   background-color: white;
   height: 100%;
-  width: 400px;
-  max-width: 400px;
+  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,26 +120,28 @@
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
+  margin: 0.5rem;
 }
 .container-card .container-card-1 .articulos img {
   width: 100%;
   height: 200px;
   border-radius: 10px;
 }
-.container-card .container-card-2 {
-  grid-template-areas: container-card-2;
+.container-card .container-card-1 .articulos:hover {
+  background-color: #FFE0EB;
 }
-.container-card .container-card-2 a {
+.container-card .container-card-2 {
+  grid-area: container-card-2;
+}
+.container-card .container-card-2 .articulos {
   color: #000000;
   text-decoration: none;
   padding: 15px 20px;
   list-style: none;
-}
-.container-card .container-card-2 .articulos {
   background-color: white;
   height: 100%;
-  width: 400px;
-  max-width: 400px;
+  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,26 +149,28 @@
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
+  margin: 0.5rem;
 }
 .container-card .container-card-2 .articulos img {
   width: 100%;
   height: 200px;
   border-radius: 10px;
 }
-.container-card .container-card-3 {
-  grid-template-areas: container-card-3;
+.container-card .container-card-2 .articulos:hover {
+  background-color: #FFE0EB;
 }
-.container-card .container-card-3 a {
+.container-card .container-card-3 {
+  grid-area: container-card-3;
+}
+.container-card .container-card-3 .articulos {
   color: #000000;
   text-decoration: none;
   padding: 15px 20px;
   list-style: none;
-}
-.container-card .container-card-3 .articulos {
   background-color: white;
   height: 100%;
-  width: 400px;
-  max-width: 400px;
+  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,26 +178,28 @@
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
+  margin: 0.5rem;
 }
 .container-card .container-card-3 .articulos img {
   width: 100%;
   height: 200px;
   border-radius: 10px;
 }
-.container-card .container-card-4 {
-  grid-template-areas: container-card-4;
+.container-card .container-card-3 .articulos:hover {
+  background-color: #FFE0EB;
 }
-.container-card .container-card-4 a {
+.container-card .container-card-4 {
+  grid-area: container-card-4;
+}
+.container-card .container-card-4 .articulos {
   color: #000000;
   text-decoration: none;
   padding: 15px 20px;
   list-style: none;
-}
-.container-card .container-card-4 .articulos {
   background-color: white;
   height: 100%;
-  width: 400px;
-  max-width: 400px;
+  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,21 +207,75 @@
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
+  margin: 0.5rem;
 }
 .container-card .container-card-4 .articulos img {
   width: 100%;
   height: 200px;
   border-radius: 10px;
 }
+.container-card .container-card-4 .articulos:hover {
+  background-color: #FFE0EB;
+}
 
-.footer .footer-link {
+.centrar-card {
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  height: 100%;
+}
+.centrar-card .card-fondo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 0;
+  grid-template-areas: "subtitulo1 subtitulo1" "parrafo1 imagen1" "subtitulo2 subtitulo2" "imagen2 parrafo2";
+  height: 70vh;
+  width: 150vh;
+  background-color: #FADBD7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 6vh;
+}
+.centrar-card .card-fondo h2 {
+  text-align: center;
+}
+.centrar-card .card-fondo img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+}
+.centrar-card .card-fondo p {
+  width: 20rem;
+  text-align: center;
+  font-size: 1.2em;
+}
+.centrar-card .card-fondo .subtitulo1 {
+  grid-area: subtitulo1;
+}
+.centrar-card .card-fondo .parrafo1 {
+  grid-area: parrafo1;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.centrar-card .card-fondo .imagen1 {
+  grid-area: imagen1;
+}
+.centrar-card .card-fondo .subtitulo2 {
+  grid-area: subtitulo2;
+}
+.centrar-card .card-fondo .parrafo2 {
+  grid-area: parrafo2;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.centrar-card .card-fondo .imagen2 {
+  grid-area: imagen2;
 }
 
 /*# sourceMappingURL=estilo.css.map */

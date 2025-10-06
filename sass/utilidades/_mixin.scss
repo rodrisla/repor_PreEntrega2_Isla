@@ -1,3 +1,5 @@
+@use "_variables.scss" as *;
+
 @mixin grid($colums, $rows, $gap) {
     display: grid;
     grid-template-columns: $colums;
@@ -14,17 +16,19 @@
     justify-content: center;
     align-items: center;
 }
+
 @mixin links {
     color: #000000;
     text-decoration: none;
     padding: 15px 20px;
     list-style: none;
 }
+
 @mixin articulos {
     background-color: white;
     height: 100%;
-    width: 400px;
-    max-width: 400px;
+    width: 500px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,10 +36,24 @@
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 10px;
+    margin: 0.5rem;
 
     img {
         width: 100%;
         height: 200px;
         border-radius: 10px;
     }
+
+    &:hover {
+        background-color: $color-hover;
+    }
+}
+
+@mixin card-prederterminada {
+    height: 70vh;
+    width: 150vh;
+    background-color: $color-card;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 6vh;
 }

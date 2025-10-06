@@ -1,0 +1,58 @@
+@use "../utilidades/variables" as *;
+@use "../utilidades/mixin" as *;
+
+.centrar-card {
+    @include flex;
+    @include centrar;
+
+    .card-fondo {
+        @include grid(repeat(2, 1fr), repeat(4, auto), 0);
+        grid-template-areas: "subtitulo1 subtitulo1"
+            "parrafo1 imagen1"
+            "subtitulo2 subtitulo2"
+            "imagen2 parrafo2";
+        @include card-prederterminada;
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+        }
+        p{
+            width: 20rem;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .subtitulo1 {
+            grid-area: subtitulo1;
+        }
+
+        .parrafo1 {
+            grid-area: parrafo1;
+            @include flex;
+            @include centrar;
+        }
+
+        .imagen1 {
+            grid-area: imagen1;
+        }
+
+        .subtitulo2 {
+            grid-area: subtitulo2;
+        }
+
+        .parrafo2 {
+            grid-area: parrafo2;
+            @include flex;
+            @include centrar;
+        }
+
+        .imagen2 {
+            grid-area: imagen2;
+        }
+    }
+}
