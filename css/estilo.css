@@ -1,233 +1,213 @@
-html body {
-    margin: 0;
-    padding: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.bg-main {
-    background-color: #FFC4D5;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 0;
+  grid-template-areas: "header" "main" "footer";
+}
+.grid-container .header {
+  background-color: #F7C4FF;
+  height: 10vh;
+  grid-area: header;
+  display: flex;
+  flex: 1;
+}
+.grid-container .header .navbar {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+}
+.grid-container .header .navbar ul {
+  display: flex;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+.grid-container .header .navbar ul li {
+  margin: 0 15px;
+}
+.grid-container .header .navbar ul li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 15px 20px;
+  list-style: none;
+}
+.grid-container .header .navbar .navbar-nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container .footer {
+  grid-area: footer;
+  height: 6vh;
+  background-color: #F7C4FF;
+}
+.grid-container .main {
+  grid-area: main;
+  height: 84vh;
+  background-color: #FFC4D5;
 }
 
-.bg-nav-foo {
-    background-color: #F7C4FF;
+.container-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 0;
+  grid-template-areas: "title" "section";
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.container-main .title {
+  grid-area: title;
+  height: 10vh;
+}
+.container-main .title h1 {
+  font-size: 4em;
+  text-align: center;
+}
+.container-main .section {
+  grid-template-areas: section;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.card-img {
-    height: 200px;
-    width: 400px;
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 0;
+  place-items: center;
+  height: 100%;
+  grid-template-areas: "container-card-1 container-card-2" "container-card-3 container-card-4";
+}
+.container-card article {
+  text-align: center;
+}
+.container-card .container-card-1 {
+  grid-template-areas: container-card-1;
+}
+.container-card .container-card-1 a {
+  color: #000000;
+  text-decoration: none;
+  padding: 15px 20px;
+  list-style: none;
+}
+.container-card .container-card-1 .articulos {
+  background-color: white;
+  height: 100%;
+  width: 400px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.container-card .container-card-1 .articulos img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.container-card .container-card-2 {
+  grid-template-areas: container-card-2;
+}
+.container-card .container-card-2 a {
+  color: #000000;
+  text-decoration: none;
+  padding: 15px 20px;
+  list-style: none;
+}
+.container-card .container-card-2 .articulos {
+  background-color: white;
+  height: 100%;
+  width: 400px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.container-card .container-card-2 .articulos img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.container-card .container-card-3 {
+  grid-template-areas: container-card-3;
+}
+.container-card .container-card-3 a {
+  color: #000000;
+  text-decoration: none;
+  padding: 15px 20px;
+  list-style: none;
+}
+.container-card .container-card-3 .articulos {
+  background-color: white;
+  height: 100%;
+  width: 400px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.container-card .container-card-3 .articulos img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.container-card .container-card-4 {
+  grid-template-areas: container-card-4;
+}
+.container-card .container-card-4 a {
+  color: #000000;
+  text-decoration: none;
+  padding: 15px 20px;
+  list-style: none;
+}
+.container-card .container-card-4 .articulos {
+  background-color: white;
+  height: 100%;
+  width: 400px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.container-card .container-card-4 .articulos img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
 }
 
-a {
-    color: #000000;
-    text-decoration: none;
+.footer .footer-link {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
-.card-hover:hover {
-    background-color: #ffe0eb;
-}
-
-.card-hover:active {
-    background-color: #A787B0;
-}
-
-.bg-card-img {
-    background-color: white;
-}
-
-.nav-link:hover {
-    background-color: #C79BD1;
-}
-
-.foo-link:hover {
-    background-color: #C79BD1;
-}
-
-aside {
-    top: 0;
-    padding-top: 220px;
-    background-color: #F7C4FF;
-    position: fixed;
-    width: 220px;
-    height: 100vh;
-}
-.content-menu {
-    display: flex;
-    gap: 20px;
-    background-color: #FFC4D5;
-}
-
-main {
-    flex-grow: 1;
-}
-.main-producto{
-    margin-left: 220px;
-}
-
-.card-producto {
-    transition: transform 0.3s ease;
-}
-
-.card-producto:hover {
-    background-color: #ffe0eb;
-    transform: scale(1.2);
-}
-
-@media (max-width: 991px) {
-    aside {
-        position: static;
-        width: 100%;
-        min-height: auto;
-        margin-bottom: 20px;
-    }
-
-    .content-menu {
-        flex-direction: column;
-    }
-
-    .card-producto:hover {
-        background-color: #ffe0eb;
-        transform: scale(1.0);
-    }
-    .main-producto{
-        margin-left: 0;
-    }
-}
-
-.btn-categoria {
-    width: 100%;
-    background-color: #F7C4FF;
-}
-
-.btn-categoria:hover {
-    background-color: #C79BD1;
-}
-.card-img-gatito{
-    height: 200px;
-    width: 300px;
-    padding-left: 50px;
-}
-.bg-card-predeterminada{
-    background-color: #fadbd7;;
-}
-
-/* ANTES DE USAR BOOTSTRAP */
-
-/* .grid-container{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto 1fr auto  ;
-    grid-template-areas: "header header header"
-                         "main   main   main"
-                         "footer footer footer";
-}
-.grid-item{
-    background-color: #F7C4FF;
-}
-.header{
-    display: flex;
-    grid-area: header;
-    height: 10vh;
-}
-header{ 
-    display: flex;
-    flex: 1;
-}
-
-.navbar{
-    flex: 1;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 0 20px;
-}
-.navbar ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.navbar li{
-    margin: 0 15px;
-}       
-.navbar a {
-    color: #000000;
-    text-decoration: none;
-    padding: 15px 20px;
-}
-.main{
-    grid-area: main;
-    height: 80vh; */
-/* background-color: #FFC4D5;
-}
-.container-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "title"
-                         "section";
-} 
- .title{
-    grid-area: title; 
-    height: 10vh;
-}
-.titulo{
-    display: flex;
-    flex: 1;
-    font-size: 4em;
-    justify-content:center;
-    font-family: 'Times New Roman', Times, serif;
-}
-.section{
-    grid-template-areas: section;
-    height: 70vh;
-}
-.container-links{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
-    gap: 5px; 
-    place-items: center;
-    height: 100%; 
-    grid-template-areas: "art1 art2"
-                         "art3 art4";
-}
-
-article{
-    text-align: center;
-}
-.art1{
-    grid-area: art1;
-}
-.art2{
-    grid-area: art2;
-}
-.art3{
-    grid-area: art3;
-}
-.art4{
-    grid-area: art4;
-}
-.articulos{
-    background-color: bisque;
-    height: 300px;          
-    width: 450px;
-    display: flex;
-    justify-content: center;  Horizontal 
-    align-items: center;       Vertical
-}
-.footer{
-     display: flex;
-    grid-area: footer;
-    height: 10vh; */
-/*  background-color: #F7C4FF;
-    text-align: center;
-    flex: 1; 
-}
- footer{
-    flex: 1;
-    display: flex;
-    justify-content:center;
-    align-items: center
-}
-footer a{
-    margin: 10px;
-}  */
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,41 @@
+@mixin grid($colums, $rows, $gap) {
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    gap: $gap;
+}
+
+@mixin flex {
+    display: flex;
+    flex: 1;
+}
+
+@mixin centrar {
+    justify-content: center;
+    align-items: center;
+}
+@mixin links {
+    color: #000000;
+    text-decoration: none;
+    padding: 15px 20px;
+    list-style: none;
+}
+@mixin articulos {
+    background-color: white;
+    height: 100%;
+    width: 400px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+    }
+}
