@@ -27,8 +27,8 @@
 @mixin articulos {
     background-color: white;
     height: 100%;
-    width: 500px;
-    max-width: 500px;
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +50,9 @@
 }
 
 @mixin card-prederterminada {
-    height: 70vh;
-    width: 150vh;
+    height: auto
+    width: 100%;
+    max-width: 1100px;
     background-color: $color-card;
     padding: 10px;
     border-radius: 10px;

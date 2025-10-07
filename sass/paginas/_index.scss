@@ -7,7 +7,7 @@
         "section";
     justify-content: center;
     @include centrar;
-
+    padding: 1rem;
     .title {
         grid-area: title;
         height: 10vh;
