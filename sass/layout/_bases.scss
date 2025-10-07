@@ -22,7 +22,9 @@
         .navbar {
             @include flex;
             padding: 0 20px;
-
+            img{
+                height: 85px;
+            }
             ul {
                 @include flex;
                 padding: 0;
