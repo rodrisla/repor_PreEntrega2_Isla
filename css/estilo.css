@@ -309,28 +309,28 @@
   width: 400px;
   height: 300px;
 }
-.centrar-card .card-fondo-2 .subtitulo1 {
+.centrar-card .card-fondo-2 .subtituloquienes1 {
   grid-area: subtitulo1;
 }
-.centrar-card .card-fondo-2 .parrafo1 {
+.centrar-card .card-fondo-2 .parrafoquienes {
   grid-area: parrafo1;
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
 }
-.centrar-card .card-fondo-2 .parrafo1 p {
+.centrar-card .card-fondo-2 .parrafoquienes p {
   width: 20rem;
   text-align: center;
   font-size: 1.5em;
 }
-.centrar-card .card-fondo-2 .imagen1 {
+.centrar-card .card-fondo-2 .imagenquienes {
   grid-area: imagen1;
 }
-.centrar-card .card-fondo-2 .subtitulo2 {
+.centrar-card .card-fondo-2 .subtituloquienes2 {
   grid-area: subtitulo2;
 }
-.centrar-card .card-fondo-2 .subtitulo2 p {
+.centrar-card .card-fondo-2 .subtituloquienes2 p {
   text-align: center;
   font-size: 1.5em;
 }

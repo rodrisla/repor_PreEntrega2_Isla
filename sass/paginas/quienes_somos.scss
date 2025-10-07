@@ -15,23 +15,17 @@
         h2 {
             text-align: center;
         }
-
-
-
         img {
             display: block;
             margin: auto 0;
             width: 400px;
             height: 300px;
         }
-
-        .subtitulo1 {
+        .subtituloquienes1 {
             grid-area: subtitulo1;
-
-
         }
 
-        .parrafo1 {
+        .parrafoquienes {
             grid-area: parrafo1;
             @include flex;
             @include centrar;
@@ -42,14 +36,11 @@
                 font-size: 1.5em;
             }
         }
-
-        .imagen1 {
+        .imagenquienes {
             grid-area: imagen1;
         }
-
-        .subtitulo2 {
+        .subtituloquienes2 {
             grid-area: subtitulo2;
-
             p {
                 text-align: center;
                 font-size: 1.5em;
