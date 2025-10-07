@@ -5,12 +5,15 @@
     @include grid (1fr, auto 1fr auto, 0);
     grid-template-areas: "title"
         "section";
-    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    height: auto;
     @include centrar;
-    padding: 1rem;
+
     .title {
         grid-area: title;
-        height: 10vh;
+        height: auto;
+        min-height: 10vh;
         margin-top: 20px;
 
         h1 {
@@ -21,7 +24,9 @@
 
     .section {
         grid-template-areas: section;
-        width: 100%;
+        width: auto;
+        height: auto;
+        min-height: 70vh;
         display: flex;
         justify-content: center
     }
@@ -75,4 +80,5 @@
         }
     }
 }
+
 

@@ -6,7 +6,11 @@
     padding: 0;
     margin: 0;
 }
-html, body{
+
+html,
+body {
+    height: auto;
+    min-height: 100%;
     overflow-x: hidden;
 }
 
@@ -17,18 +21,25 @@ html, body{
         "main"
         "footer";
     min-height: 100%;
+    height: auto;
+    width: 100%;
+
     .header {
         background-color: $color-secundario;
-        height: 10%;
+        height: auto;
+        max-height: 10vh;
         grid-area: header;
         @include flex;
 
         .navbar {
             @include flex;
             padding: 0 20px;
-            img{
-                height: 85px;
+
+            img {
+                max-height: 85px;
+                height: auto;
             }
+
             ul {
                 @include flex;
                 padding: 0;
@@ -52,8 +63,10 @@ html, body{
 
     .footer {
         grid-area: footer;
-        height: 6%;
+        height: auto;
+        max-height: 6vh;
         background-color: $color-secundario;
+
         .footer-link {
             @include flex;
             @include centrar;
@@ -70,4 +83,3 @@ html, body{
         background-color: $color-primario;
     }
 }
-
