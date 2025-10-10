@@ -11,111 +11,113 @@
 </head>
 
 <body>
-    <div class="grid-container">
+    <div class="grid-container-productos">
         <div class="grid-item header">
             <nav class="navbar navbar-expand-lg bg-nav-foo shadow-sm">
-                
-                    <!-- logo -->
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../imagenes/logo.svg" alt="logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                        aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="menu">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="" href="productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item"><a class="" href="como_comprar.html">¿Cómo
-                                    comprar?</a>
-                            </li>
-                            <li class="nav-item"><a class="" href="quienes_somos.html">¿Quiénes
-                                    somos?</a></li>
-                            <li class="nav-item"><a class="" href="clientes.html">Clientes</a>
-                            </li>
-                        </ul>
-                    </div>
-                
+                <!-- logo -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagenes/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item"><a class="" href="como_comprar.html">¿Cómo
+                                comprar?</a>
+                        </li>
+                        <li class="nav-item"><a class="" href="quienes_somos.html">¿Quiénes
+                                somos?</a></li>
+                        <li class="nav-item"><a class="" href="clientes.html">Clientes</a>
+                        </li>
+                    </ul>
+                </div>
+
             </nav>
         </div>
         <div class="grid-item aside">
-            <aside class="collapse d-lg-block p-3 rounded" id="sidebarMenu">
+            <aside class="">
                 <h5>Categorías</h5>
-                <a class="nav-link rounded" href="#accesorios">Accesorios</a>
-                <a class="nav-link rounded" href="#vasos">Vasos</a>
-                <a class="nav-link rounded" href="#boxes">Boxes</a>
-                <a class="nav-link rounded" href="#cuadros">Cuadros</a>
+                <a class="" href="../index.html">Inicio</a>
+                <a class="" href="#accesorios">Accesorios</a>
+                <a class="" href="#vasos">Vasos</a>
+                <a class="" href="#boxes">Boxes</a>
+                <a class="" href="#cuadros">Cuadros</a>
             </aside>
         </div>
         <div class="grid-item main">
-            <section id="accesorios" class="">
-                <h2>Accesorios</h2>
-                <div class="">
-                    <div class="">
-                        <div class="">
+            <div class="distribucion">
+                <section id="accesorios" class="accesorios grilla">
+                    <div class="titulo">
+                        <h2>Accesorios</h2>
+                    </div>
+                    <div class="productos">
+                        <div class="card-producto">
                             <img src="../imagenes/accesorios.jpg" class="" alt="Accesorio 1">
                             <h5 class="mt-1">Accesorio 1</h5>
                         </div>
-                    </div>
-                    <div class="">
-                        <div class="">
+                        <div class="card-producto">
                             <img src="../imagenes/accesorios.jpg" class="" alt="Accesorio 2">
                             <h5 class="mt-1">Accesorio 2</h5>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- Vasos -->
-            <section id="vasos" class="">
-                <h2>Vasos</h2>
-                <div class="">
-                    <div class="">
-                        <div class="">
+                <!-- Vasos -->
+                <section id="vasos" class="vasos grilla">
+                    <div class="titulo">
+                        <h2>Vasos</h2>
+                    </div>
+                    <div class="productos">
+                        <div class="card-producto">
                             <img src="../imagenes/vasos.jpg" class="card-img-top" alt="Vaso 1">
                             <h5 class="mt-1">Vaso 1</h5>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- Boxes -->
-            <section id="boxes" class="">
-                <h2>Boxes</h2>
-                <div class="">
-                    <div class="">
-                        <div class="">
+                <!-- Boxes -->
+                <section id="boxes" class="boxes grilla">
+                    <div class="titulo">
+                        <h2>Boxes</h2>
+                    </div>
+                    <div class="productos">
+                        <div class="card-producto">
                             <img src="../imagenes/box.jpg" class="card-img-top" alt="Box 1">
                             <h5 class="">Box 1</h5>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <!-- Cuadros -->
-            <section id="cuadros" class="">
-                <h2>Cuadros</h2>
-                <div class="">
-                    <div class="">
-                        <div class="">
+                </section>
+
+                <!-- Cuadros -->
+                <section id="cuadros" class="cuadros grilla">
+
+                    <div class="titulo">
+                        <h2>Cuadros</h2>
+                    </div>
+                    <div class="productos">
+                        <div class="card-producto">
                             <img src="../imagenes/cuadros.jpg" class="" alt="Cuadro 1">
                             <h5>Cuadro 1</h5>
                         </div>
                     </div>
-                </div>
-            </section>
+
+                </section>
+            </div>
         </div>
         <div class="grid-item footer">
             <div class="footer-link">
                 <!-- NUESTRAS REDES SOCIALES -->
-                <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram.png"
+                <a href="https://www.instagram.com/mildetalles.vr" target="_blank"><img src="../imagenes/instagram.png"
                         alt=""></a>
-                <a href="https://www.tiktok.com/es/" target="_blank"><img src="../imagenes/tiktok.png"
-                        alt=""></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagenes/whatsapp.png"
-                        alt=""></a>
+                <a href="https://www.tiktok.com/es/" target="_blank"><img src="../imagenes/tiktok.png" alt=""></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagenes/whatsapp.png" alt=""></a>
             </div>
         </div>
     </div>
