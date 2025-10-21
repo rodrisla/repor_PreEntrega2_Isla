@@ -10,8 +10,8 @@
 html,
 body {
     height: auto;
-    min-height: 100%;
-    overflow-x: hidden;
+    min-height: 100vh;
+
 }
 
 .grid-container {
@@ -20,23 +20,23 @@ body {
         "header"
         "main"
         "footer";
-    min-height: 100%;
+    min-height: 100vh;
     height: auto;
     width: 100%;
 
     .header {
         background-color: $color-secundario;
         height: auto;
-        max-height: 10vh;
         grid-area: header;
         @include flex;
-
+        position: relative;
+        z-index: 10;
         .navbar {
             @include flex;
             padding: 0 20px;
 
             img {
-                max-height: 85px;
+                max-height: 84px;
                 height: auto;
             }
 
@@ -64,7 +64,7 @@ body {
     .footer {
         grid-area: footer;
         height: auto;
-        max-height: 6vh;
+        max-height: 7vh;
         background-color: $color-secundario;
 
         .footer-link {
@@ -81,5 +81,39 @@ body {
         min-height: 84vh;
         height: auto;
         background-color: $color-primario;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        .navbar {
+            .navbar-collapse {
+                background-color: $color-secundario;
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .navbar-brand {
+                img {
+                    max-height: 70px;
+                    height: auto;
+                }
+            }
+
+            ul {
+                @include flex;
+                padding: 0;
+                margin-right: 200px;
+
+                li {
+                    padding: 10px;
+                    margin: 0 15px;
+
+                    a {
+                        @include links;
+                    }
+                }
+            }
+        }
     }
 }

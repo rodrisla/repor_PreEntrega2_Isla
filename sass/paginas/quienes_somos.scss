@@ -15,13 +15,16 @@
         h2 {
             text-align: center;
         }
+
         img {
             display: block;
             margin: auto 0;
             width: auto;
-            max-width: 40%;
+            max-width: 50%;
+            max-height: 50%;
             height: auto;
         }
+
         .subtituloquienes1 {
             grid-area: subtitulo1;
         }
@@ -36,14 +39,34 @@
                 font-size: 1.5em;
             }
         }
+
         .imagenquienes {
             grid-area: imagen1;
+            align-content: center;
         }
+
         .subtituloquienes2 {
             grid-area: subtitulo2;
+
             p {
                 text-align: center;
                 font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .centrar-card {
+
+        .card-fondo-2 {
+
+            img {
+                display: block;
+                margin: auto 0;
+                width: auto;
+                max-width: 60%;
+                height: auto;
             }
         }
     }

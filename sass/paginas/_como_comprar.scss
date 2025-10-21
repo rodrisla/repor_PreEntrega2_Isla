@@ -59,3 +59,19 @@
         }
     }
 }
+
+
+@media screen and (max-width: 991px) {
+    .centrar-card {
+        .card-fondo {
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: auto;
+                max-width: 50%;
+                height: auto;
+            }
+        }
+    }
+}

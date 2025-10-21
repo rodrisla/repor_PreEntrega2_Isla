@@ -22,12 +22,16 @@
     text-decoration: none;
     padding: 15px 20px;
     list-style: none;
+    &:hover {
+                            background-color: $color-hoverlink;
+                            border-radius: 5px;
+                        }
 }
 
 @mixin articulos {
     background-color: white;
-    height: 350px;
-    min-height: 350px;
+    height: 280px;
+    min-height: 280px;
     width: 90%;
     max-width: 500px;
 
@@ -35,21 +39,20 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 0.5rem;
 
-    .imagen-tamaño {    
+    .imagen-tamano {    
         height: auto;
-        max-height: 90%;
+        max-height: 70%;
         width: 100%;
         position: relative;
         img {
             width: 100%;
             max-width: 300px;
             height: auto;
-            max-height: 90% !important;
+            max-height: 100% !important;
             border-radius: 10px;
         }
     }
