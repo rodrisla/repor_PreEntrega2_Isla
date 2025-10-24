@@ -1,6 +1,7 @@
 @use "../utilidades/variables" as *;
 @use "../utilidades/mixin" as *;
 
+/* SASS PARA ESTILAR COMO SE VE LA PAGINA EN GENERAL (MAIN,HEADER,FOOTER) */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -84,6 +85,8 @@ body {
     }
 }
 
+/* APLICAMOS MEDIAS QUERYS PARA PANTALLAS MAS CHICAS */
+
 @media screen and (max-width: 991px) {
     .header {
         .navbar {
@@ -104,6 +107,7 @@ body {
                 @include flex;
                 padding: 0;
                 margin-right: 200px;
+                width: 100%;
 
                 li {
                     padding: 10px;

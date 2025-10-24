@@ -11,7 +11,7 @@
             "parrafo1 imagen1"
             "subtitulo2 subtitulo2";
         @include card-prederterminada;
-        
+
         h2 {
             text-align: center;
         }
@@ -27,6 +27,7 @@
 
         .subtituloquienes1 {
             grid-area: subtitulo1;
+            text-align: center;
         }
 
         .parrafoquienes {
@@ -67,6 +68,41 @@
                 width: auto;
                 max-width: 60%;
                 height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .centrar-card {
+
+        .card-fondo-2 {
+            @include grid(repeat(1, 1fr), repeat(5, auto), 0);
+            grid-template-areas: "subtitulo1"
+                "imagen1"
+                "parrafo1"
+                "subtitulo2";
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: auto;
+                max-width: 60%;
+                height: auto;
+            }
+
+            .parrafoquienes {
+                p {
+                    text-align: center;
+                    font-size: 1.3em;
+                }
+            }
+
+            .subtituloquienes2 {
+                p {
+                    text-align: center;
+                    font-size: 1.3em;
+                }
             }
         }
     }

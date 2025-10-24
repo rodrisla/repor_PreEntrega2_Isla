@@ -52,7 +52,7 @@
     .centrar-card {
         .card-fondo-3 {
 
-            max-width: 650px;
+            max-width: 80%;
             padding: 20px;
 
             .mi-carrusel {
@@ -73,9 +73,43 @@
                 }
             }
 
-            .subtitulocliente h2 {
+            .subtitulocliente {
                 font-size: 1.5rem;
             }
         }
     }
+}
+
+@media screen and (max-width: 575px) {
+    .centrar-card {
+        .card-fondo-3 {
+
+            padding: 15px;
+
+            .mi-carrusel {
+
+                width: 100%;
+                max-width: 100%;
+
+                .carousel-item {
+                    width: 100%;
+
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        max-height: 400px;
+                    }
+                }
+            }
+
+            .subtitulocliente {
+                
+                    font-size: 1.5rem;
+                
+            }
+        }
+    }
+
 }

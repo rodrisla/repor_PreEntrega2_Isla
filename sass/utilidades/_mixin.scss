@@ -1,22 +1,23 @@
-@use "_variables.scss" as *;
+@use "_variables.scss" as *;/* INCLUIMOS VARIABLES */
 
+ /* MIXIN PARA GRID */
 @mixin grid($colums, $rows, $gap) {
     display: grid;
     grid-template-columns: $colums;
     grid-template-rows: $rows;
     gap: $gap;
 }
-
+/* MIXIN PARA FLEX */
 @mixin flex {
     display: flex;
     flex: 1;
 }
-
+/* MIXIN PARA CENTRAR */
 @mixin centrar {
     justify-content: center;
     align-items: center;
 }
-
+/* MIXIN PARA ESTILAR LOS LINKS */
 @mixin links {
     color: #000000;
     text-decoration: none;
@@ -27,7 +28,7 @@
                             border-radius: 5px;
                         }
 }
-
+/* MIXIN PARA ESTILAR CARD DE ARTICULOS */
 @mixin articulos {
     background-color: white;
     height: 280px;
@@ -61,7 +62,7 @@
         background-color: $color-hover;
     }
 }
-
+/* MIXIN PARA CARD DE QUIENES SOMOS Y COMO COMPRAR */
 @mixin card-prederterminada {
     min-height: 20vh;
     height: auto;

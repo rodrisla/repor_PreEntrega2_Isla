@@ -81,4 +81,25 @@
     }
 }
 
+@media screen and (max-width:768px) {
+    .container-card {
+        @include grid (1fr, auto 1fr auto, 0);
+        place-items: center;
+        height: 100%;
+        grid-template-areas:
+            "container-card-1"
+            "container-card-2"
+            "container-card-3"
+            "container-card-4";
+    }
 
+    .container-main {
+        .title {
+
+            h1 {
+                font-size: 3em;
+                text-align: center;
+            }
+        }
+    }
+}

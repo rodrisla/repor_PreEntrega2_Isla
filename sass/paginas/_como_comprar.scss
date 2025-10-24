@@ -24,7 +24,7 @@
             max-width: 35%;
             height: auto;
         }
-
+ 
         p {
             text-align: center;
             font-size: 1.2em;
@@ -32,6 +32,7 @@
 
         .subtitulo1 {
             grid-area: subtitulo1;
+            text-align: center;
         }
 
         .parrafo1 {
@@ -64,6 +65,29 @@
 @media screen and (max-width: 991px) {
     .centrar-card {
         .card-fondo {
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: auto;
+                max-width: 50%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .centrar-card {
+        max-height: 95%;
+        margin-top: 1vh;
+        .card-fondo {
+            grid-template-areas: "subtitulo1 subtitulo1"
+                "imagen1 imagen1"
+                "parrafo1 parrafo1"
+                "subtitulo2 subtitulo2"
+                "imagen2 imagen2"
+                "parrafo2 parrafo2";
 
             img {
                 display: block;
