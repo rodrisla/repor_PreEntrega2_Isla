@@ -1,6 +1,6 @@
 @use "../utilidades/variables" as *;
 @use "../utilidades/mixin" as *;
-
+/* ESTILOS PARA LA PAGINA COMO COMPRAR */
 .centrar-card {
     @include flex;
     @include centrar;
@@ -61,7 +61,7 @@
     }
 }
 
-
+/* MEDIAS QUERYS PARA TABLET */
 @media screen and (max-width: 991px) {
     .centrar-card {
         .card-fondo {
@@ -76,7 +76,7 @@
         }
     }
 }
-
+/* MEDIA QUERYS PARA CELULAR */
 @media screen and (max-width: 768px) {
     .centrar-card {
         max-height: 95%;

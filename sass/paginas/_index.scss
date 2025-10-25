@@ -1,6 +1,6 @@
 @use "../utilidades/variables" as *;
 @use "../utilidades/mixin" as *;
-
+/* ESTILOS PARA EL HTML INDEX */
 .container-main {
     @include grid (1fr, auto 1fr auto, 0);
     grid-template-areas: "title"
@@ -80,7 +80,7 @@
         }
     }
 }
-
+/* MEDIA QUERYUS PARA CELULAR ---EN TABLET SE AJUSTA SOLO, NO ES NECESARIO---- */
 @media screen and (max-width:768px) {
     .container-card {
         @include grid (1fr, auto 1fr auto, 0);
