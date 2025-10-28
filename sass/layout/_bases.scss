@@ -27,7 +27,7 @@ body {
 
     .header {
         background-color: $color-secundario;
-        height: auto;
+        height: 10vh;
         grid-area: header;
         @include flex;
         position: relative;
@@ -37,7 +37,7 @@ body {
             padding: 0 20px;
 
             img {
-                max-height: 84px;
+                max-height: 9vh;
                 height: auto;
             }
 
@@ -76,7 +76,7 @@ body {
             height: 100%;
             a{
                 img{
-                    max-height: 30px;
+                    max-height: 29px;
                     height: auto;
                     margin: 0;
                     padding: 0;
@@ -87,7 +87,7 @@ body {
 
     .main {
         grid-area: main;
-        min-height: 84vh;
+        min-height: 83vh;
         height: auto;
         background-color: $color-primario;
     }

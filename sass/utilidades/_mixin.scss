@@ -31,8 +31,8 @@
 /* MIXIN PARA ESTILAR CARD DE ARTICULOS */
 @mixin articulos {
     background-color: white;
-    height: 280px;
-    min-height: 280px;
+    height: 30vh;
+    min-height: 30vh;
     width: 90%;
     max-width: 500px;
 
@@ -64,7 +64,6 @@
 }
 /* MIXIN PARA CARD DE QUIENES SOMOS Y COMO COMPRAR */
 @mixin card-prederterminada {
-    min-height: 20vh;
     height: auto;
     width: auto;
     max-width: 80%;

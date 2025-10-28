@@ -31,7 +31,7 @@ body {
 }
 .grid-container .header {
   background-color: #F7C4FF;
-  height: auto;
+  height: 10vh;
   grid-area: header;
   display: flex;
   flex: 1;
@@ -44,7 +44,7 @@ body {
   padding: 0 20px;
 }
 .grid-container .header .navbar img {
-  max-height: 84px;
+  max-height: 9vh;
   height: auto;
 }
 .grid-container .header .navbar ul {
@@ -88,14 +88,14 @@ body {
   height: 100%;
 }
 .grid-container .footer .footer-link a img {
-  max-height: 30px;
+  max-height: 29px;
   height: auto;
   margin: 0;
   padding: 0;
 }
 .grid-container .main {
   grid-area: main;
-  min-height: 84vh;
+  min-height: 83vh;
   height: auto;
   background-color: #ffe4ff;
 }
@@ -193,8 +193,8 @@ body {
 }
 .container-card .container-card-1 .articulos {
   background-color: white;
-  height: 280px;
-  min-height: 280px;
+  height: 30vh;
+  min-height: 30vh;
   width: 90%;
   max-width: 500px;
   display: flex;
@@ -236,8 +236,8 @@ body {
 }
 .container-card .container-card-2 .articulos {
   background-color: white;
-  height: 280px;
-  min-height: 280px;
+  height: 30vh;
+  min-height: 30vh;
   width: 90%;
   max-width: 500px;
   display: flex;
@@ -279,8 +279,8 @@ body {
 }
 .container-card .container-card-3 .articulos {
   background-color: white;
-  height: 280px;
-  min-height: 280px;
+  height: 30vh;
+  min-height: 30vh;
   width: 90%;
   max-width: 500px;
   display: flex;
@@ -322,8 +322,8 @@ body {
 }
 .container-card .container-card-4 .articulos {
   background-color: white;
-  height: 280px;
-  min-height: 280px;
+  height: 30vh;
+  min-height: 30vh;
   width: 90%;
   max-width: 500px;
   display: flex;
@@ -381,7 +381,6 @@ body {
   grid-template-rows: repeat(4, auto);
   gap: 0;
   grid-template-areas: "subtitulo1 subtitulo1" "parrafo1 imagen1" "subtitulo2 subtitulo2" "imagen2 parrafo2";
-  min-height: 20vh;
   height: auto;
   width: auto;
   max-width: 80%;
@@ -474,7 +473,6 @@ body {
   grid-template-rows: repeat(3, auto);
   gap: 0;
   grid-template-areas: "subtitulo1 subtitulo1" "parrafo1 imagen1" "subtitulo2 subtitulo2";
-  min-height: 20vh;
   height: auto;
   width: auto;
   max-width: 80%;
@@ -573,7 +571,6 @@ body {
   grid-template-areas: "subtitulocliente" "mi-carrusel";
   justify-content: center;
   align-items: center;
-  min-height: 20vh;
   height: auto;
   width: auto;
   max-width: 80%;
@@ -584,6 +581,7 @@ body {
   margin-top: 3vh;
   max-height: 100%;
   height: auto;
+  margin: 5px;
 }
 .centrar-card .card-fondo-3 .subtitulocliente {
   grid-area: subtitulocliente;
@@ -609,7 +607,7 @@ body {
 }
 .centrar-card .card-fondo-3 .mi-carrusel .carousel-item img {
   width: 100%;
-  height: 70vh;
+  height: 65vh;
 }
 
 /* MEDIA QUERYS PARA TABLET */
@@ -636,9 +634,9 @@ body {
   }
 }
 /* MEDIA QUERYS PARA CELULAR */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   .centrar-card .card-fondo-3 {
-    padding: 15px;
+    padding: 0;
   }
   .centrar-card .card-fondo-3 .mi-carrusel {
     width: 100%;
@@ -651,7 +649,7 @@ body {
   .centrar-card .card-fondo-3 .mi-carrusel .carousel-item img {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 80vh;
   }
   .centrar-card .card-fondo-3 .subtitulocliente {
     font-size: 1.5rem;
@@ -670,7 +668,7 @@ body {
 }
 .grid-container-productos .header {
   background-color: #F7C4FF;
-  height: auto;
+  height: 10vh;
   grid-area: header;
   display: flex;
   flex: 1;
@@ -683,7 +681,7 @@ body {
   padding: 0 20px;
 }
 .grid-container-productos .header .navbar img {
-  max-height: 85px;
+  max-height: 9vh;
   height: auto;
 }
 .grid-container-productos .header .navbar ul {
@@ -729,14 +727,14 @@ body {
   height: 100%;
 }
 .grid-container-productos .footer .footer-link a img {
-  max-height: 30px;
+  max-height: 29px;
   height: auto;
   margin: 0;
   padding: 0;
 }
 .grid-container-productos .main {
   grid-area: main;
-  min-height: 84vh;
+  min-height: 83vh;
   height: auto;
   background-color: #ffe4ff;
 }
