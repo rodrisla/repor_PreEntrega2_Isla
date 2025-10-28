@@ -87,6 +87,12 @@ body {
   flex-wrap: wrap;
   height: 100%;
 }
+.grid-container .footer .footer-link a img {
+  max-height: 30px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
 .grid-container .main {
   grid-area: main;
   min-height: 84vh;
@@ -128,6 +134,7 @@ body {
   }
 }
 /* INCLUIMOS ESTILO DE LA PAGINA EN GENERAL */
+/* ESTILOS PARA EL HTML INDEX */
 .container-main {
   display: grid;
   grid-template-columns: 1fr;
@@ -344,6 +351,7 @@ body {
   background-color: #FFE0EB;
 }
 
+/* MEDIA QUERYUS PARA CELULAR ---EN TABLET SE AJUSTA SOLO, NO ES NECESARIO---- */
 @media screen and (max-width: 768px) {
   .container-card {
     display: grid;
@@ -360,6 +368,7 @@ body {
   }
 }
 /* INCLUIMOS ESTILO DE INDEX */
+/* ESTILOS PARA LA PAGINA COMO COMPRAR */
 .centrar-card {
   display: flex;
   flex: 1;
@@ -424,6 +433,7 @@ body {
   grid-area: imagen2;
 }
 
+/* MEDIAS QUERYS PARA TABLET */
 @media screen and (max-width: 991px) {
   .centrar-card .card-fondo img {
     display: block;
@@ -433,6 +443,7 @@ body {
     height: auto;
   }
 }
+/* MEDIA QUERYS PARA CELULAR */
 @media screen and (max-width: 768px) {
   .centrar-card {
     max-height: 95%;
@@ -450,6 +461,7 @@ body {
   }
 }
 /* INCLUIMOS ESTOLO DE COMO COMPRAR */
+/* ESTILOS PARA EL HTML QUIENES SOMOS */
 .centrar-card {
   display: flex;
   flex: 1;
@@ -510,6 +522,7 @@ body {
   font-size: 1.5em;
 }
 
+/* MEDIA QUERYS PARA TABLETS */
 @media screen and (max-width: 991px) {
   .centrar-card .card-fondo-2 img {
     display: block;
@@ -519,6 +532,7 @@ body {
     height: auto;
   }
 }
+/* MEDIA QUERYS PARA CELULAR */
 @media screen and (max-width: 768px) {
   .centrar-card .card-fondo-2 {
     display: grid;
@@ -544,6 +558,7 @@ body {
   }
 }
 /* INCLUIMOS ESTILOS DE QUIENES SOMOS */
+/* ESTILOS PARA EL HTML CLIENTES */
 .centrar-card {
   display: flex;
   flex: 1;
@@ -597,6 +612,7 @@ body {
   height: 70vh;
 }
 
+/* MEDIA QUERYS PARA TABLET */
 @media screen and (max-width: 991px) {
   .centrar-card .card-fondo-3 {
     max-width: 80%;
@@ -619,6 +635,7 @@ body {
     font-size: 1.5rem;
   }
 }
+/* MEDIA QUERYS PARA CELULAR */
 @media screen and (max-width: 575px) {
   .centrar-card .card-fondo-3 {
     padding: 15px;
@@ -641,6 +658,7 @@ body {
   }
 }
 /* INCLUIMOS ESTILOS DE CLIENTES */
+/* ESTILOS PARA EL HTML PRODUCTOS */
 .grid-container-productos {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -709,6 +727,12 @@ body {
   gap: 60px;
   flex-wrap: wrap;
   height: 100%;
+}
+.grid-container-productos .footer .footer-link a img {
+  max-height: 30px;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 .grid-container-productos .main {
   grid-area: main;
@@ -818,6 +842,7 @@ body {
   background-color: #C79BD1;
 }
 
+/* MEDIA QUERYS PARA TABLETS */
 @media screen and (max-width: 991px) {
   .grid-container-productos {
     display: grid;
@@ -843,6 +868,7 @@ body {
     padding: 10px 0;
   }
 }
+/* MEDIA QUERYS PARA CELULAR */
 @media screen and (max-width: 768px) {
   .grid-container-productos .main .distribucion .grilla .productos {
     display: flex;
